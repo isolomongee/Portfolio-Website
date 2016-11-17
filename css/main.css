@@ -10,7 +10,22 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+body{
+    background-color: #e0dada;
+}
 
+footer{
+    background-color:#373a3c;
+}
+
+.jumbotron-heading{
+    font-weight:700;
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
 
 .navbar{
     background-color: #232020;

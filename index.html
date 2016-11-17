@@ -13,14 +13,40 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
 
     <script src="https://use.fontawesome.com/7b93c589e6.js"></script>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-light">
-        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+    <div class="navbar-collapse collapse inverse" id="navbar-header">
+        <div class="container-fluid">
+            <div class="about col-md-4">
+                <h4>About</h4>
+                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            </div>
+            <div class="social col-md-8">
+                <h4>Contact</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Follow on Twitter</a></li>
+                    <li><a href="#">Like on Facebook</a></li>
+                    <li><a href="#">Email me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-static-top navbar-dark bg-inverse">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+            <a href="#" class="navbar-brand">Album</a>
+        </div>
+    </div>
+
+    <!--<nav class="navbar navbar-light">
+        
         <ul class="nav navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -44,7 +70,7 @@
             <input class="form-control" type="text" placeholder="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-    </nav>
+    </nav>-->
 
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -53,25 +79,47 @@
     <div id="jumbotronText">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-3">Welcome to our world.</h1>
-                <p class="lead">We hope to build you something amazing.</p>
+                <section class="text-xs-center">
+                    <div class="container">
+                        <h1 class="jumbotron-heading">Welcome to our world.</h1>
+                        <p class="text-white">We hope to build you something amazing.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Main call to action</a>
+                            <a href="#" class="btn btn-secondary">Secondary action</a>
+                        </p>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
     <div class="container">
         <div id="beginningSection">
             <div>
-                <div style="margin:100px 0px 100px 0px">
+                <div>
 
                     <br />
 
-                    <div class="col-md-6 offset-md-3 text-md-center">
+                    <div class="col-md-4 text-md-center">
                         <i class="fa fa-coffee fa-5x"></i>
                         <h1 class="text-md-center">Heres to new beginnings.</h1>
                         <p>
                             A brand new startup dedicated to improving your life through web design.
                             We want to create a fast reponsive site for your busniess, blog, or whatever it is you want to advertise! Please check out some of our current works below.
-                            We are new so we dont have many, but we are eager to work directly with you to give you what you want.
+                           
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-md-center">
+                        <i class="fa fa-users fa-5x"></i>
+                        <h1 class="text-md-center">Customer Driven.</h1>
+                        <p>
+                           We will work directly with you to deliver a beautiful site. The whole world will be jealous of your site! 
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-md-center">
+                        <i class="fa fa-code fa-5x"></i>
+                        <h1 class="text-md-center">Apsects of our design.</h1>
+                        <p>
+                           
                         </p>
                     </div>
                 </div>
@@ -80,66 +128,94 @@
 
         <br />
         <br />
+    </div>
 
 
+    <div style="margin-top:75px" class="parallax-window" data-parallax="scroll" data-image-src="/Team-Portfolio-Website-master/imgs/computer.jpg"></div>
 
-       
+
+    <!--<div class="container">
+
         <div style="margin-top:100px;" class="col-md-12">
             <div class="card-columns">
-                <!--<div class="card-deck">-->
+             
                 <div class="card card-inverse" id="site1">
                     <img class="card-img img-fluid" src="../Team-Portfolio-Website-master/imgs/pool.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
-                    </div>
                 </div>
                 <div class="card card-inverse bar" id="site2">
                     <img class="card-img img-fluid" src="../Team-Portfolio-Website-master/imgs/barber_shop.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
-                    </div>
                 </div>
                 <div class="card card-inverse" id="site3">
                     <img class="card-img img-fluid" src="../Team-Portfolio-Website-master/imgs/wathen_speakers2.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
-                    </div>
                 </div>
                 <div class="card card-inverse" id="site4">
                     <img class="card-img img-fluid" src="../Team-Portfolio-Website-master/imgs/pool.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
-                    </div>
                 </div>
                 <div class="card card-inverse" id="site5">
                     <img class="card-img img-fluid" src="../Team-Portfolio-Website-master/imgs/barber_shop.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
-                    </div>
                 </div>
                 <div class="card card-inverse">
                     <img class="card-img img-fluid" src="../Team-Portfolio-Website-master/imgs/wathen_speakers2.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>-->
+    <div class="container">
+        <div class="col-md-6">
+            Dont wait any longer! Contact us today and leets gets to work!
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-block">
+                    <h4 class="card-title">Contact Us</h4>
+                    <div class="card-text">
+                        Send us a message and start the process today.
+                        <form action="" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="fname">First Name</label>
+                                <input type="input" class="form-control" id="fname" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name</label>
+                                <input type="input" class="form-control" id="lname" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone #</label>
+                                <input type="tel" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="(XXX)-xxx-xxxx">
+                                <small id="phoneHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!--</div>-->
-
     </div>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-xs-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
