@@ -10,6 +10,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+.transparent {
+    background:rgba(255,255,255,0.5);
+}
+
 body{
     background-color: #e0dada;
 }
